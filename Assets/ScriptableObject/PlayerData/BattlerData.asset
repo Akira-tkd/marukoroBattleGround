@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288c5d118a8c5aa4e9115d2f8b779fc7, type: 3}
+  m_Name: BattlerData
+  m_EditorClassIdentifier: 
+  MaxHP: 1800
+  Speed: 15
+  LimitSpeed: 50
+  JumpPower: 15
+  MaxEnegy: 30
+  Attack1: {fileID: 11400000, guid: 1b3ab59969a5eb14abdf5bfcec439bfb, type: 2}
+  Attack2: {fileID: 11400000, guid: 9092c5f54b438064692e4e33bd22fbbb, type: 2}

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1cbcea872d88474b9be4a251706ea73, type: 3}
+  m_Name: BeamDroneBullet
+  m_EditorClassIdentifier: 
+  AttackName: "\u30D3\u30FC\u30E0\u30C9\u30ED\u30FC\u30F3\u30D3\u30FC\u30E0"
+  Interval: 0.001
+  Speed: 100
+  Damage: 1
+  Life: 3
+  BulletPrefab: {fileID: 8219727267406993934, guid: 23ccaf3ee65adf641b94b0b02c25e56f, type: 3}
+  EffectList: []
+  EnemyEffectList: []

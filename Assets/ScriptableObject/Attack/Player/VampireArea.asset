@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1cbcea872d88474b9be4a251706ea73, type: 3}
+  m_Name: VampireArea
+  m_EditorClassIdentifier: 
+  AttackName: "\u5438\u8840\u30D5\u30A3\u30FC\u30EB\u30C9"
+  Interval: 10
+  Speed: 0
+  Damage: 2
+  Life: 3
+  BulletPrefab: {fileID: 201929661975930348, guid: aa8ced846bd090c4a8c9dffd5147e3f7, type: 3}
+  EffectList:
+  - {fileID: 11400000, guid: 2c49aa280e6e4c04998b87e149da645d, type: 2}
+  - {fileID: 11400000, guid: ae3faa53f384598479b1d6d0c8cc2efb, type: 2}
+  EnemyEffectList: []

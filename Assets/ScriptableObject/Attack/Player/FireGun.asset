@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1cbcea872d88474b9be4a251706ea73, type: 3}
+  m_Name: FireGun
+  m_EditorClassIdentifier: 
+  AttackName: "\u706B\u708E\u653E\u5C04"
+  Interval: 0.001
+  Speed: 20
+  Damage: 5
+  Life: 0.5
+  BulletPrefab: {fileID: 3331665724134456810, guid: 98afa6fa7565860469184995474db943, type: 3}
+  EffectList: []
+  EnemyEffectList: []

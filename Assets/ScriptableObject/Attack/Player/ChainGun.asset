@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1cbcea872d88474b9be4a251706ea73, type: 3}
+  m_Name: ChainGun
+  m_EditorClassIdentifier: 
+  AttackName: "\u30C1\u30A7\u30A4\u30F3\u30AC\u30F3"
+  Interval: 0.8
+  Speed: 100
+  Damage: 100
+  Life: 2
+  BulletPrefab: {fileID: 7855286955496893076, guid: dc53783a96921914dad7ddf134c7bc8c, type: 3}
+  EffectList:
+  - {fileID: 11400000, guid: 37f25182276a68948b39b2b39749e5ad, type: 2}
+  EnemyEffectList: []

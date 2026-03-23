@@ -31,6 +31,10 @@ public class PlayerStatus : MonoBehaviour
             JumpPower = RunTimePlayerData.Instance.Data.JumpPower;
             JumpEnegy = RunTimePlayerData.Instance.Data.MaxEnegy;
         }
+        else
+        {
+            return;
+        }
 
         if(oldMaxHP < MaxHP)
         {

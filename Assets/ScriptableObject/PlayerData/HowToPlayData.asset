@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288c5d118a8c5aa4e9115d2f8b779fc7, type: 3}
+  m_Name: HowToPlayData
+  m_EditorClassIdentifier: 
+  MaxHP: 1000
+  Speed: 10
+  LimitSpeed: 30
+  JumpPower: 10
+  MaxEnegy: 50
+  Attack1: {fileID: 11400000, guid: 6f1fa29de9821484091f47b34906d66a, type: 2}
+  Attack2: {fileID: 11400000, guid: 2c09f79087ebca84f954a64f9420686c, type: 2}

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6362552922837116654}
   - component: {fileID: 5944788073666885917}
   - component: {fileID: 2968842444537139879}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: "\u4E38\u30B3\u30ED"
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -335,3 +335,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d293b99e56e06514d9eefc25789042e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorialData: {fileID: 11400000, guid: 98f387f273e123c45bb8d84058f1b1d5, type: 2}

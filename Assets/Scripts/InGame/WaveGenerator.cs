@@ -30,7 +30,6 @@ public class WaveGenerator : MonoBehaviour
     WaveInfomation GetRandomWaveInformation(string fileName)
     {
         var items = Resources.LoadAll<WaveInfomation>(fileName);
-        Debug.Log(items.Length);
         if(items != null)
         {
             return items[Random.Range(0, items.Length)];

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class NormalMoving : MonoBehaviour
 {
@@ -43,6 +44,11 @@ public class NormalMoving : MonoBehaviour
         {
             hoverRequested = false;
         }
+    }
+
+    public void OnExit(InputAction.CallbackContext context)
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     void FixedUpdate()

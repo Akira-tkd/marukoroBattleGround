@@ -21,7 +21,7 @@ public class TutorialManager : MonoBehaviour
 
         foreach(var tutorialObject in tutorialObjects)
         {
-            tutorialObject.ChangeActive(tutorialStage);
+            tutorialObject.OnChangeStage(tutorialStage);
         }
     }
 
@@ -30,15 +30,25 @@ public class TutorialManager : MonoBehaviour
         if(direction)
         {
             tutorialStage++;
+            if(maxStage < tutorialStage)
+            {
+                tutorialStage = maxStage;
+                return;
+            }
         }
         else
         {
             tutorialStage--;
+            if (0 > tutorialStage)
+            {
+                tutorialStage = 0;
+                return;
+            }
         }
 
         foreach (var tutorialObject in tutorialObjects)
         {
-            tutorialObject.ChangeActive(tutorialStage);
+            tutorialObject.OnChangeStage(tutorialStage);
         }
     }
 }

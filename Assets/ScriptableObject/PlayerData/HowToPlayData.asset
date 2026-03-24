@@ -15,7 +15,7 @@ MonoBehaviour:
   MaxHP: 1000
   Speed: 10
   LimitSpeed: 30
-  JumpPower: 10
-  MaxEnegy: 50
+  JumpPower: 15
+  MaxEnegy: 120
   Attack1: {fileID: 11400000, guid: 6f1fa29de9821484091f47b34906d66a, type: 2}
-  Attack2: {fileID: 11400000, guid: 2c09f79087ebca84f954a64f9420686c, type: 2}
+  Attack2: {fileID: 11400000, guid: 6fe22826a099f154aae6ad073cb38c1e, type: 2}

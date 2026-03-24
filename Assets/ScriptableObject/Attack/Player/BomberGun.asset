@@ -17,7 +17,7 @@ MonoBehaviour:
   Speed: 80
   Damage: 500
   Life: 8
-  BulletPrefab: {fileID: 8905861241289817453, guid: 08bda7fd3e895854587312762273138f, type: 3}
+  BulletPrefab: {fileID: 3030930355979039185, guid: d45d6e8ede8891448b383e851854d46b, type: 3}
   EffectList:
   - {fileID: 11400000, guid: a732feb060429ac4385c1389d5524542, type: 2}
   EnemyEffectList: []

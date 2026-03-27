@@ -17,9 +17,13 @@
 
 # **使用技術**
   ・Unity
+  
   ・C#
+  
   ・ScriptableObject
+  
   ・Interface設計
+  
   ・StateMachine
 
 # **制作工程**

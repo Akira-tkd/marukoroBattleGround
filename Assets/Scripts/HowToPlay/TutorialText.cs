@@ -4,7 +4,13 @@ using TMPro;
 
 public class TutorialText : TutorialObject
 {
-    [SerializeField] List<string> informationText;
+    /*
+     * チュートリアル段階に応じて表示する説明用テキストにアタッチする
+     * テキスト内容や切り替えるタイミングはシリアライズで設定する
+     * アクティブになるタイミングだけでなく、テキスト内容が変わるタイミングもactiveStageに入れる必要がある
+     */
+
+    [SerializeField] List<string> informationText;  // テキスト内容のリスト
     [SerializeField] TextMeshProUGUI textObject;
 
     public override void OnChangeStage(int stage)

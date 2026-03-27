@@ -11,6 +11,7 @@ public abstract class TutorialObject : MonoBehaviour
     [SerializeField] List<int> activeStage;  // どの段階でアクティブにするかを決める変数
     [SerializeField] List<int> disactiveStage;  // どの段階で非アクティブにするかを決める変数
 
+    // シリアライズされた変数を参照できるように
     protected List<int> ActiveStage => activeStage;
     protected List<int> DisActiveStage => disactiveStage;
 

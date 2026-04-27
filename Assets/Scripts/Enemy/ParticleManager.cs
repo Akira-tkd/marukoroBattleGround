@@ -20,21 +20,25 @@ public class ParticleManager : MonoBehaviour
             _poolDictionary[key] = queue;
         }
 
+        HitParticle hp;
         if(queue.Count > 0)
         {
-            HitParticle hp = queue.Dequeue();
+            hp = queue.Dequeue();
             hp.gameObject.SetActive(true);
-            return hp;
         }
         else
         {
-            return Instantiate(_prefab);
+            hp = Instantiate(_prefab);
         }
+
+        hp.Init(this, key);
+        return hp;
     }
 
     public void Release(GameObject key, HitParticle hitParticle)
     {
         _poolDictionary[key].Enqueue(hitParticle);
+        hitParticle.gameObject.SetActive(false);
     }
 
 }

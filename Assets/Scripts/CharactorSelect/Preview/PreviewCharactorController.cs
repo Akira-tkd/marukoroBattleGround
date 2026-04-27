@@ -14,6 +14,7 @@ public class PreviewCharactorController : MonoBehaviour
 
     PlayerData data;  // プレビューするキャラクターのデータ
     [SerializeField] GameObject enemy;  // プレビュー内で攻撃する敵のプレハブ
+    [SerializeField] ParticleManager _pm; // パーティクルオブジェクトをpoolで管理するためのクラス
 
     private Vector3 initPos = Vector3.zero;  // プレビューの初期位置
     private Rigidbody rb;  // 移動や速度の初期化を行うため変数として宣言しておく
@@ -170,12 +171,17 @@ public class PreviewCharactorController : MonoBehaviour
             var e2 = Instantiate(enemy);
             var e3 = Instantiate(enemy);
 
-            enemyTF = e1.transform;
+            foreach(var enemy in EnemyManager.Instance.EnemyList)
+            {  
+                enemy.gameObject.GetComponent<ParticleGenerator>().SetPool(_pm);
+            }
 
             e1.transform.position = initPos +  new Vector3(-10f, 1f, 16f);
             e2.transform.position = initPos + new Vector3(17f, 1f, 26f);
             e3.transform.position = initPos + new Vector3(0f, 7.2f, 26f);
         }
+
+        Vector3 enemyPos = EnemyManager.Instance.EnemyList[0].position;
 
         float duration = 5f;  // 一つの攻撃方法を再生する秒数
         float life = 0f;
@@ -187,7 +193,7 @@ public class PreviewCharactorController : MonoBehaviour
             // 以下の処理は実際の攻撃処理と同じ処理
             if (Time.time >= nextAttackTime)
             {
-                Vector3 dir = enemyTF.position - transform.position;
+                Vector3 dir = enemyPos - transform.position;
                 dir = dir.normalized;
                 GameObject bullet = BulletPollManager.Instance.GetObject(data.Attack1);
                 bullet.transform.position = transform.position;
@@ -206,7 +212,7 @@ public class PreviewCharactorController : MonoBehaviour
             life += Time.deltaTime;
             if (Time.time >= nextAttackTime)
             {
-                Vector3 dir = enemyTF.position - transform.position;
+                Vector3 dir = enemyPos - transform.position;
                 dir = dir.normalized;
                 GameObject bullet = BulletPollManager.Instance.GetObject(data.Attack2);
                 bullet.transform.position = transform.position;

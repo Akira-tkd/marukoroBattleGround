@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject RewardPrefab;
     [SerializeField] GameObject RewardCanvas;
     [SerializeField] PlayerInput PlayerInput;
+    [SerializeField] ParticleManager _particleManager;
 
     void Awake()
     {
@@ -85,6 +86,7 @@ public class GameManager : MonoBehaviour
         }
 
         var obj = Instantiate(enemy);
+        obj.GetComponent<ParticleGenerator>().SetPool(_particleManager);
         obj.transform.position = new Vector3(x, y, z);
     }
 

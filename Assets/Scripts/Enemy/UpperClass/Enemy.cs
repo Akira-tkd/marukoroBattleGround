@@ -46,7 +46,6 @@ public class Enemy : MonoBehaviour
         HP -= amount;
 
         OnDamaged(amount, hitPos);
-
         if(HP <= 0)
         {
             HP = 0;
@@ -92,5 +91,12 @@ public class Enemy : MonoBehaviour
             }
             yield return null;
         }
+    }
+    
+    // デバッグ用のメソッド
+    // 残りHPを返す
+    public int ShowHP()
+    {
+        return HP;
     }
 }

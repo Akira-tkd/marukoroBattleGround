@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4677001023493191114}
   - component: {fileID: 4920758716935240517}
   - component: {fileID: 6080280965959048561}
+  - component: {fileID: 8948186562795696463}
   m_Layer: 0
   m_Name: AttackedEffect
   m_TagString: Untagged
@@ -41,7 +42,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459004799100710481}
   serializedVersion: 8
-  lengthInSec: 1
+  lengthInSec: 0.1
   simulationSpeed: 1
   stopAction: 3
   cullingMode: 0
@@ -4833,3 +4834,15 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &8948186562795696463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459004799100710481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b476aca6f180c554e98a1b774d85a3fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

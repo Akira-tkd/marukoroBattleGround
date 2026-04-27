@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -38,15 +39,15 @@ public class Enemy : MonoBehaviour
         EnemyManager.Instance.EnemyList.Remove(transform);  // 撃破されたので残りの敵リストから削除する
     }
 
-    // 未定だが、回復行動を行える様に正負両対応になっている
-    public void ChangeHP(int amount)
+    
+    public event Action<int, Vector3> OnDamaged;  // ダメージを受けた時に呼ばれるイベント
+    public void OnAttacked(int amount, Vector3 hitPos)
     {
-        HP += amount;
-        if(HP > maxHP)
-        {
-            HP = maxHP;
-        }
-        else if(HP <= 0)
+        HP -= amount;
+
+        OnDamaged(amount, hitPos);
+
+        if(HP <= 0)
         {
             HP = 0;
             this.gameObject.SetActive(false);

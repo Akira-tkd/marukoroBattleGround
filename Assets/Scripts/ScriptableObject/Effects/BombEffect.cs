@@ -22,7 +22,8 @@ public class BombEffect : Effect
         {
             if (enemy != null)
             {
-                enemy.ChangeHP(-bombDamage);
+                var col = enemy.gameObject.GetComponent<Collider>();
+                enemy.OnAttacked(bombDamage, col.ClosestPoint(effect.transform.position));
             }
         }
     }

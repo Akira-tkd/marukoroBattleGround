@@ -9,6 +9,6 @@ public class Dummy : FlyType
      */
     void Update()
     {
-        ChangeHP(MaxHP);
+        OnAttacked(MaxHP, Vector3.zero);
     }
 }

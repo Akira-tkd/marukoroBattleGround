@@ -54,7 +54,7 @@ public class HighSpeedBullet : MonoBehaviour, IAttack
                 if (!context.HitEnemies.Contains(hit.collider.transform))
                 {
                     var enemy = hit.collider.gameObject.GetComponent<Enemy>();
-                    enemy.ChangeHP(-Data.Damage);
+                    enemy.OnAttacked(Data.Damage, hit.point);
                     context.HitEnemies.Add(enemy.transform);
                     BulletPollManager.Instance.Leave(gameObject, Data);
                     gameObject.SetActive(false);

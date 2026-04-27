@@ -1376,8 +1376,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa9f3cee30af3c458da98a70dfa006f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attack1: {fileID: 11400000, guid: 6f1fa29de9821484091f47b34906d66a, type: 2}
-  attack2: {fileID: 11400000, guid: 1e2ca7ee6a36fd54287d60b1054a4193, type: 2}
 --- !u!114 &1131064109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1512,6 +1510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 4000
+  attackData: {fileID: 0}
 --- !u!65 &1567751725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1634,6 +1633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 800
+  attackData: {fileID: 0}
 --- !u!65 &1624219051
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2055,6 +2055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 5000
+  attackData: {fileID: 0}
 --- !u!65 &1891504999
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -65,7 +65,7 @@ public class Bullet : MonoBehaviour, IAttack
                 return;
             }
             var enemy = c.gameObject.GetComponent<Enemy>();
-            enemy.ChangeHP(-damage);
+            enemy.OnAttacked(damage, c.ClosestPoint(this.transform.position));
             context.HitEnemies.Add(enemy.transform);
             BulletPollManager.Instance.Leave(gameObject, Data);
             gameObject.SetActive(false);

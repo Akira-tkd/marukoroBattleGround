@@ -59,7 +59,8 @@ public class AttackArea : MonoBehaviour, IAttack
         this.transform.localScale += new Vector3(0.05f, 0.05f, 0.05f);
         foreach(var enemy  in stayEnemies)
         {
-            enemy.ChangeHP(-Data.Damage);
+            var col = enemy.gameObject.GetComponent<Collider>();
+            enemy.OnAttacked(Data.Damage, col.ClosestPoint(this.transform.position));
             foreach(var effect in Data.EffectList)
             {
                 effect.OnHit(context, enemy.gameObject);
